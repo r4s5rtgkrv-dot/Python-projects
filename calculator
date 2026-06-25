@@ -1,0 +1,9 @@
+print("calculator")
+equation = input("put your equation: ")
+
+allowed_chars = "0123456789+-*/(). "
+
+if all(c in allowed_chars for c in equation):
+    print(eval(equation))
+else:
+    print("Invalid input")
